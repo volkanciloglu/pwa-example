@@ -1,4 +1,4 @@
-# pwa-suport
+# pwa-support
 
 ## Build Setup
 
