@@ -2,27 +2,18 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">ŞİMDİ SANIRIM PWA OLMALI</h1>
+      <h1 class="title">PWA</h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >GitHub</a>
+        <a-button size="large" @click="$router.push('/about')">ABOUT</a-button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {}
+};
 </script>
 
 <style>
@@ -51,9 +42,5 @@ export default {};
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>

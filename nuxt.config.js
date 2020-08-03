@@ -51,6 +51,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
+    "@nuxtjs/onesignal",
   ],
 
   /*
@@ -71,6 +72,16 @@ export default {
       display: "standalone",
       background_color: "#f70000",
       description: "A simply readable Hacker News app.",
+    },
+  },
+  oneSignal: {
+    init: {
+      cdn: true,
+      appId: "d457ea8f-a389-45ab-99e8-d69810dcfe13",
+      allowLocalhostAsSecureOrigin: true,
+      welcomeNotification: {
+        disable: true,
+      },
     },
   },
 };
